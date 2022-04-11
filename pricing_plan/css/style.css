@@ -1,0 +1,187 @@
+/* ======= Normal Css Style ========= */
+* {
+  --primary_color: #4A53FF;
+  --text_color: #ffffff;
+  --bg: #242430;
+  --header_bg:#2E2E3A;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Telegraf', 'open-sans';
+}
+ul, li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #4A53FF;
+  text-decoration: none;
+}
+
+/* ========= Header Area Style ========= */
+#header {
+  background: var(--header_bg);
+  height: 74px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  position: fixed;
+  z-index: 1;
+}
+#header .col-md-9 {
+  text-align: right;
+}
+#header .menu_items li {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+#header .menu_items li a {
+  color: var(--text_color);
+  transition: all 0.3s ease;
+}
+#header .menu_items li:hover a {
+  color: var(--primary_color);
+  text-decoration: none;
+}
+#header .menu_items button {
+  background: var(--primary_color);
+  color: var(--text_color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 30px;
+  height: 37px;
+  width: 110px;
+  border: none;
+  transition: all 0.3s linear;
+}
+#header .menu_items button:hover {
+  background: transparent;
+  border: 1px solid var(--text_color);
+}
+/* ========== Pricing Area Style ========= */
+#pricing_area {
+  background: var(--bg);
+  height: 1000px;
+  color: var(--text_color);
+}
+#pricing_area .pricing_head {
+  text-align: center;
+  margin: 150px 0 0;
+}
+#pricing_area .pricing_head h1 {
+  font-size: 46px;
+  font-weight: 700;
+}
+#pricing_area .pricing_head p {
+  color: #B7B7DB;
+  font-size: 20px;
+}
+#pricing_area .selection {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+#pricing_area .selection p {
+  display: inline-block;
+}
+#pricing_area .selection div {
+  display: inline-block;
+  background: #000000;
+  height: 14px;
+  width: 50px;
+  border-radius:10px;
+  margin: 0 10px;
+  position: relative;
+}
+#pricing_area .selection div::before {
+  position: absolute;
+  content: '';
+  top: -4px;
+  right: -4px;
+  background: #000000;
+  height: 22px;
+  width: 22px;
+  border: 4px solid var(--primary_color);
+  border-radius:100%;
+}
+#pricing_area .plan {
+  border: 4px solid var(--header_bg);
+  padding: 30px 30px;
+  width: 100%;
+}
+#pricing_area .plan h2 {
+  color: var(--text_color);
+  font-size: 25px;
+}
+#pricing_area .plan h1 {
+  color: var(--primary_color);
+  font-size: 60px;
+  font-weight: 800;
+}
+#pricing_area .plan h1 p {
+  color: var(--primary_color);
+  font-size: 17px;
+  display: inline-block;
+}
+#pricing_area .plan p {
+  color: #C9C9E8;
+}
+#pricing_area .plan ul {
+  color: #C9C9E8;
+}
+#pricing_area .plan ul li i {
+  color: var(--primary_color);
+}
+#pricing_area .plan li i.spase{
+  margin-right: 15px;
+}
+#pricing_area .plan ul p {
+  display: inline-block;
+  margin-left: 10px;
+}
+#pricing_area .plan button {
+  background: var(--primary_color);
+  color: var(--text_color);
+  height: 50px;
+  width: 98%;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+#pricing_area .plan button:hover {
+  background: transparent;
+  border: 1px solid var(--text_color);
+}
+#pricing_area .lite {
+  background: var(--header_bg);
+  border: 1px solid var(--primary_color);
+  position: relative;
+}
+#pricing_area .lite .rec {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: var(--primary_color);
+  color: var(--text_color);
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+
+
+

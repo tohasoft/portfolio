@@ -1,0 +1,110 @@
+/* =========== Default Body CSS ============ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "sans-serif";
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: #FF2465;
+  text-decoration: none;
+}
+
+/* =========== Header Area Style ============ */
+header {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  height: 975px;
+}
+#header {
+  background: #28292e;
+  height: 78px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+#header .menu_items {
+  padding: 5px 0;
+  text-align: center;
+}
+#header .menu_items ul, li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+#header .menu_items li a {
+  color: white;
+}
+#header .menu_items li:hover a {
+  color: #FF2465;
+}
+#header .menu_btn {
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 5px;
+  color: #FF2465;
+}
+#header .menu_btn p {
+  display: inline-block;
+}
+#header .menu_btn a {
+  color: #FF2465;
+}
+#header .menu_btn a:hover {
+  color: white;
+}
+#header .menu_btn i {
+  margin-left: 10px;
+}
+/* ============== Banner Area ============== */
+#banner_area {
+  color: white;
+  display: flex;
+}
+#banner_area .banner {
+  text-align: center;
+  height: 800px;
+  padding-top: 300px;
+}
+#banner_area .banner h1 {
+  font-weight: 700;
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+#banner_area .banner p {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 120px;
+}
+#banner_area .banner button {
+  background: #FF2465;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 100%;
+}
+#banner_area .banner button i {
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+}
