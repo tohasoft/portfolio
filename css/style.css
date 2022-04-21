@@ -176,7 +176,7 @@ border: 1px solid var(--primary_color);
 #banner .banner_right span::after {
   position: absolute;
   content: '';
-  top: 145px;
+  top: 146px;
   right: -15px;
   background: var(--primary_color);
   height: 200px;
@@ -197,7 +197,7 @@ border: 1px solid var(--primary_color);
   position: absolute;
   z-index: 1;
   bottom: 30px;
-  right: 40px;
+  right: 50px;
 }
 #banner .banner_right .icon i {
   color: var(--white_color);
