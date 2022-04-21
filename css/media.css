@@ -1,0 +1,78 @@
+/*==========================
+  Media Query For Responsive
+  ==========================*/
+@media (max-width: 576px) {
+  #header {
+    height: auto;
+  }
+  #banner .row {
+    flex-wrap: wrap-reverse;
+  }
+  #banner .banner_left {
+    margin-top: 50px;
+  }
+  #banner .banner_left_text h2 {
+    font-size: 40px;
+  }
+  #about {
+    padding: 30px 0;
+  }
+  #about .about_right h2 {
+    margin-top: 30px;
+  }
+  #about .work {
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+  #services .child_service {
+    margin-bottom: 20px;
+  }
+  #portfolio .child_portfolio {
+    height: 300px;
+  }
+  #portfolio .child_portfolio img {
+    height: 180px;
+    width: 100%;
+  }
+  #portfolio .child_portfolio h2 {
+    font-size: 16px;
+  }
+  #portfolio .preview_btn .preview {
+    font-size: 15px;
+  }
+  #testimonial .testimonial {
+    padding: 30px 0;
+  }
+  #testimonial .child_testimonial {
+    padding: 20px 30px;
+    border-radius: 40px 0 40px 0;
+    margin-bottom: 20px;
+  }
+  #testimonial .child_testimonial p {
+    margin-bottom: 20px;
+  }
+  #testimonial .child_testimonial .person img {
+    height: 60px;
+    width: 60px;
+  }
+  #testimonial .child_testimonial .person h4 {
+    font-size: 22px;
+  }
+  #testimonial .child_testimonial .person h5 {
+    font-size: 14px;
+  }
+  #contact .right {
+    margin-top: 20px;
+  }
+  #footer p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}

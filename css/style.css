@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*==========================
+  Basic Css Style
+  ==========================*/
+:root {
+  /*== Color Variable ==*/
+  --primary_color: #4E35FA;
+  --text_color: #303030;
+  --white_color: #fff;
+  --p_text_color: #5f5f5f;
+  --shaddow: #4f35fa3c;
+  --body_bg: #FBFBFF;
+  --footer_bg: #030021;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins';
+}
+ul, ol, li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  color: var(--text_color);
+  text-decoration: none;
+  transition: all .4s ease;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.heading {
+  position: relative;
+}
+.heading::before {
+  position: absolute;
+  content: '';
+  background-color: var(--primary_color);
+  height: 2px;
+  width: 110px;
+  left: 215px;
+  bottom: 1px;
+}
+.heading::after {
+  position: absolute;
+  content: '';
+  background-color: var(--primary_color);
+  height: 2px;
+  width: 60px;
+  left: 238px;
+  bottom: -3px;
+}
+
+/*==========================
+  Header Area Css Style
+  ==========================*/
+#header {
+  background-color: var(--white_color);
+  height: 80px;
+  width: 100%;
+  padding: 5px 0;
+  box-shadow: 0 0 20px var(--shaddow);
+}
+#header .menu_items {
+  text-align: center;
+}
+#header .menu_items ul {
+  color: var(--text_color);
+  font-size: 18px;
+  font-weight: 400;
+}
+#header .menu_items ul li {
+  padding: 0 5px;
+  transition: all .4s ease;
+}
+#header .menu_items ul li:hover a {
+  color: var(--primary_color);
+}
+#header .menu_items .focus a{
+  background-color: var(--primary_color);
+  color: var(--white_color);
+  padding: 10px 20px;
+  border: 1px solid var(--primary_color);
+  border-radius: 10px 0 10px 0;
+}
+#header .menu_items .focus:hover a{
+  background: transparent;
+  color: var(--primary_color);
+  border: 1px solid var(--primary_color);
+}
+
+
+/*==========================
+  Banner Area Css Style
+  ==========================*/
+#banner {
+  padding: 50px 0 50px 0;
+}
+#banner .banner_left {
+  margin-top: 180px;
+}
+#banner .banner_left_text h4 {
+color: var(--text_color);
+font-size: 20px;
+font-weight: 400;
+}
+#banner .banner_left_text h2 {
+color: var(--text_color);
+font-size: 50px;
+font-weight: 600;
+}
+#banner_area .banner_left_text h5 {
+color: var(--text_color);
+font-size: 20px;
+font-family: 'Roboto';
+font-weight: 600;
+}
+#banner .banner_left_text h5 p {
+display: inline-block;
+color: var(--primary_color);
+font-size: 20px;
+font-family: 'Roboto';
+font-weight: 600;
+}
+#banner .banner_left_text p {
+color: var(--p_text_color);
+font-size: 16px;
+font-family: 'Roboto';
+font-weight: 400;
+text-align: justify;
+}
+#banner .banner_left_btn .focus {
+background-color: var(--primary_color);
+color: var(--white_color);
+font-size: 18px;
+font-weight: 500;
+padding: 10px 20px;
+border: 1px solid var(--primary_color);
+border-radius: 0 10px 0 10px;
+margin-right: 20px;
+transition: all .4s ease;
+}
+#banner .banner_left_btn .focus:hover {
+background-color: var(--white_color);
+color: var(--primary_color);
+border: 1px solid var(--primary_color);
+}
+#banner .banner_left_btn .non_focus {
+color: var(--primary_color);
+background-color: var(--text_color_w);
+font-size: 18px;
+font-weight: 500;
+padding: 10px 20px;
+border: 1px solid var(--primary_color);
+border-radius: 10px 0 10px 0;
+transition: all .4s ease;
+}
+#banner .banner_left_btn .non_focus:hover {
+color: var(--white_color);
+background-color: var(--primary_color);
+border: 1px solid var(--primary_color);
+}
+#banner .banner_right span {
+  position: relative;
+}
+#banner .banner_right span::after {
+  position: absolute;
+  content: '';
+  top: 145px;
+  right: -15px;
+  background: var(--primary_color);
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+#banner .banner_right span::before {
+  position: absolute;
+  content: '';
+  bottom: 145px;
+  left: -15px;
+  background: var(--primary_color);
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+#banner .banner_right .icon {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  right: 40px;
+}
+#banner .banner_right .icon i {
+  color: var(--white_color);
+  font-size: 30px;
+  margin-left: 10px;
+  text-shadow: 0 0 10px var(--text_color);
+  transition: all .4s ease;
+}
+#banner .banner_right .icon i:hover {
+  color: var(--footer_bg);
+}
+/*==========================
+  About Area Css Style
+  ==========================*/
+#about {
+  padding: 50px 0;
+  background-color: var(--body_bg);
+}
+#about .about_left {
+  margin-top: 35px;
+}
+#about .about_right h2 {
+  color: var(--primary_color);
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+#about .about_right h2::before {
+  position: absolute;
+  content: '';
+  background-color: var(--primary_color);
+  height: 2px;
+  width: 110px;
+  left: 0;
+  bottom: 1px;
+}
+#about .about_right h2::after {
+  position: absolute;
+  content: '';
+  background-color: var(--primary_color);
+  height: 2px;
+  width: 60px;
+  left: 0;
+  bottom: -3px;
+}
+#about .about_right h4 {
+  font-family: 'Roboto';
+}
+#about .about_right p {
+  font-family: 'Roboto';
+  color: var(--p_text_color);
+  text-align: justify;
+  margin-bottom: 30px;
+}
+#about .work {
+  width: 100%;
+  text-align: center;
+  border: .5px solid var(--primary_color);
+  border-radius: 20px 0 20px 0;
+  padding-top: 12px;
+  box-shadow: 0 0 10px var(--shaddow);
+}
+#about .work h3 {
+  color: var(--primary_color);
+  line-height: 30px;
+}
+#about .work p {
+  color: var(--text_color);
+  line-height: 10px;
+}
+
+/*==========================
+  Services Area Css Style
+  ==========================*/
+#services {
+  margin: 50px 0;
+  text-align: center;
+}
+#services .service_header h2 {
+  color: var(--primary_color);
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+#services .service_header p {
+  color: var(--text_color);
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-bottom: 50px;
+}
+#services .child_service {
+  height: 310px;
+  width: 100%;
+  border: 2px solid var(--primary_color);
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+#services .child_service:hover {
+  box-shadow: 10px 10px 20px var(--shaddow);
+}
+#services .child_service i {
+  color: var(--primary_color);
+  font-size: 80px;
+  margin: 30px 0;
+}
+#services .child_service h4 {
+  font-family: 'Roboto';
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+#services .child_service p {
+  color:  var(--p_text_color);
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+/*==========================
+  Protfolio Area Css Style
+  ==========================*/
+#portfolio {
+  background-color: var(--body_bg);
+  padding: 50px 0;
+  font-family: 'Roboto';
+}
+#portfolio .portfolio_header h2 {
+  color: var(--primary_color);
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#portfolio .portfolio_header p {
+  color: var(--text_color);
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-bottom: 60px;
+  text-align: center;
+}
+#portfolio .child_portfolio {
+  height: 370px;
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  transition: all .4s ease;
+}
+#portfolio .child_portfolio:hover {
+  border: none;
+  box-shadow: 0 10px 20px var(--shaddow);
+}
+#portfolio .child_portfolio img {
+  height: 235px;
+  width: 100%;
+}
+#portfolio .child_portfolio p {
+  color: var(--p_text_color);
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+#portfolio .child_portfolio h2 {
+  color: var(--text_color);
+  font-size: 20px;
+}
+#portfolio .preview_btn {
+  text-align: center;
+}
+#portfolio .preview_btn .preview {
+  background-color: var(--white_color);
+  color: var(--primary_color);
+  font-size: 18px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  border: 1px solid var(--primary_color);
+  border-radius: 0 10px 0 10px;
+}
+#portfolio .preview_btn .preview:hover {
+  background-color: var(--primary_color);
+  color: var(--white_color);
+}
+
+/*==========================
+  Testimonial Area Css Style
+  ==========================*/
+#testimonial .testimonial{
+  background-image: url(../img/testimonial_bg.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+#testimonial .child_testimonial {
+  background-image: linear-gradient(to right, #0088ff81, #7903ff81);
+  color: var(--white_color);
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 80px 0 80px 0;
+}
+#testimonial .child_testimonial p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#testimonial .child_testimonial .person {
+  display: flex;
+  align-items: center;
+  margin: 0 80px;
+}
+#testimonial .child_testimonial .person img {
+  margin-right: 20px;
+  border-radius: 100%;
+}
+#testimonial .child_testimonial .person h4 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#testimonial .child_testimonial .person h5 {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+/*==========================
+  Contact Area Css Style
+  ==========================*/
+#contact {
+  margin: 50px 0;
+}
+#contact .contact_header h2 {
+  color: var(--primary_color);
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contact .contact_header p {
+  color: var(--text_color);
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-bottom: 60px;
+  text-align: center;
+}
+#contact .left .text h3 {
+  color: var(--text_color);
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#contact .left .text h3 span {
+  color: var(--primary_color);
+}
+#contact .left .text h4 {
+  color: var(--text_color);
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+#contact .left .text p {
+  color: var(--p_text_color);
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+#contact .left .contact_info i {
+  color: var(--primary_color);
+  font-size: 20px;
+  border: 1px solid var(--primary_color);
+  padding: 5px 6px;
+  border-radius: 10px 0 10px 0;
+  margin: 0 15px 10px 0;
+}
+#contact .left .contact_info a {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+#contact .left .contact_info a:hover {
+  color: var(--primary_color);
+}
+
+#contact .right {
+  border: 1px solid var(--primary_color);
+  border-radius: 40px 0 40px 0;
+  padding: 25px 30px;
+  font-family: 'Roboto';
+}
+#contact .right p {
+  color: var(--primary_color);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#contact .right input, textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 0.2px solid #e0dbff;
+  border-radius: 5px;
+}
+#contact .right .btn {
+  height: 45px;
+  width: 30%;
+  color: var(--white_color);
+  background-color: var(--primary_color);
+  font-size: 20px;
+  border: 1px solid var(--primary_color);
+  border-radius: 20px 0 20px 0;
+  transition: all .4s ease;
+}
+#contact .right .btn:hover {
+  color: var(--primary_color);
+  background-color: var(--white_color);
+}
+/*==========================
+  Footer Area Css Style
+  ==========================*/
+#footer {
+  background-color: var(--footer_bg);
+  color: var(--white_color);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+#footer p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#footer p a {
+  color: var(--primary_color);
+}
