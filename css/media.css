@@ -3,25 +3,28 @@
   ==========================*/
 
 @media (max-width: 412px) {
+  #banner {
+    padding: 110px 0 50px 0;
+  }
   #banner .row {
     flex-wrap: wrap-reverse;
   }
   #header .logo img {
-    height: 40px;
+    height: 35px;
   }
   #banner .banner_left {
     margin-top: 30px;
   }
   #banner .banner_right img {
-    height: 445px;
+    width: 370px;
   }
   #banner .banner_right span::before {
-    bottom: 50px;
-    left: -15px;
+    bottom: 45px;
+    left: -10px;
   }
   #banner .banner_right span::after {
-    top: 50px;
-    right: -15px;
+    top: 45px;
+    right: -10px;
   }
   #banner .banner_left_text h4 {
     font-size: 14px;
@@ -37,6 +40,7 @@
   }
   #banner .banner_left_text p {
     font-size: 14px;
+    text-align: left;
   }
   #banner .banner_left_btn .focus {
     font-size: 16px;
@@ -150,7 +154,7 @@
     margin-bottom: 30px;
   }
   #contact .left img {
-    height: 185px;
+    width: 380px;
   }
   #contact .left .text h3 {
     font-size: 28px;
