@@ -13,7 +13,7 @@
     margin-top: 30px;
   }
   #banner .banner_right img {
-    height: 450px;
+    height: 445px;
   }
   #banner .banner_right span::before {
     bottom: 50px;
@@ -150,7 +150,7 @@
     margin-bottom: 30px;
   }
   #contact .left img {
-    height: 195px;
+    height: 185px;
   }
   #contact .left .text h3 {
     font-size: 28px;
