@@ -175,6 +175,7 @@ border: 1px solid var(--primary_color);
 }
 #banner .banner_right span {
   position: relative;
+  width: 100%;
 }
 #banner .banner_right span::after {
   position: absolute;
