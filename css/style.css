@@ -66,10 +66,12 @@ img {
   ==========================*/
 #header {
   background-color: var(--white_color);
-  height: 80px;
+  height: auto;
   width: 100%;
   padding: 5px 0;
   box-shadow: 0 0 20px var(--shaddow);
+  position: fixed;
+  z-index: 9999999;
 }
 #header .menu_items {
   text-align: center;
@@ -104,7 +106,7 @@ img {
   Banner Area Css Style
   ==========================*/
 #banner {
-  padding: 50px 0 50px 0;
+  padding: 150px 0 50px 0;
 }
 #banner .banner_left {
   margin-top: 180px;
@@ -176,7 +178,7 @@ border: 1px solid var(--primary_color);
 #banner .banner_right span::after {
   position: absolute;
   content: '';
-  top: 146px;
+  top: 145px;
   right: -15px;
   background: var(--primary_color);
   height: 200px;
@@ -197,7 +199,7 @@ border: 1px solid var(--primary_color);
   position: absolute;
   z-index: 1;
   bottom: 30px;
-  right: 50px;
+  right: 40px;
 }
 #banner .banner_right .icon i {
   color: var(--white_color);
