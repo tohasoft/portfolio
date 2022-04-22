@@ -2,7 +2,7 @@
   Media Query For Responsive
   ==========================*/
 
-@media (max-width: 412px) {
+@media (max-width: 400px) {
   #banner {
     padding: 110px 0 50px 0;
   }
@@ -157,7 +157,7 @@
     margin-bottom: 30px;
   }
   #contact .left img {
-    width: 380px;
+    width: 370px;
   }
   #contact .left .text h3 {
     font-size: 28px;
