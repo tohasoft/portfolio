@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url(../fonts/FontAwesome.otf);
+
 /*==========================
   Basic Css Style
   ==========================*/
@@ -271,6 +272,23 @@ border: 1px solid var(--primary_color);
   line-height: 10px;
 }
 
+/*==============================
+  Mobile Top Up Button Css Style
+  ==============================*/
+span.top {
+  background-color: var(--primary_color);
+  text-align: center;
+  border-radius: 15px 0 15px 3px;
+  position: fixed;
+  right: -100px;
+  bottom: 10px;
+  z-index: 999;
+}
+.top i{
+  color: var(--white_color);
+  font-size: 40px;
+  padding: 0 10px;
+}
 /*==========================
   Services Area Css Style
   ==========================*/
