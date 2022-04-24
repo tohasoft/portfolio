@@ -2,7 +2,8 @@
   Media Query For Responsive
   ==========================*/
 
-@media (max-width: 420px) {
+@media (max-width: 575.98px) {
+/* ====== Banner Area ====== */
   #banner {
     padding: 110px 0 50px 0;
   }
@@ -16,15 +17,16 @@
     margin-top: 30px;
   }
   #banner .banner_right img {
-    width: 97%;
+    width: 100%;
   }
-  #banner .banner_right span::before {
-    bottom: 45px;
-    left: -10px;
+  #banner .banner_right .icon {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: 40px;
   }
-  #banner .banner_right span::after {
-    top: 45px;
-    right: -10px;
+  #banner .banner_right .icon i {
+    font-size: 25px;
   }
   #banner .banner_left_text h4 {
     font-size: 14px;
@@ -51,6 +53,8 @@
     font-size: 16px;
     padding: 8px 20px;
   }
+
+/* ====== About Area ====== */
   #about {
     padding: 20px 0;
   }
@@ -72,10 +76,13 @@
     padding: 20px 0;
     margin-bottom: 10px;
   }
+  #about .work p {margin-bottom: 0;
+  }
   span.top {
     right: 10px;
   }
 
+/* ====== Service Area ====== */
   #services {
     margin: 20px 0;
   }
@@ -84,11 +91,11 @@
   }
   .heading::before {
     width: 90px;
-    left: 148px;
+    left: 20px;
   }
   .heading::after {
     width: 50px;
-    left: 165px;
+    left: 40px;
   }
   #services .service_header p {
     font-size: 14px;
@@ -96,8 +103,11 @@
   }
   #services .child_service {
     height: 290px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid var(--primary_color);
+  }
+  #services .child_service:hover {
+    box-shadow: 10px 10px 10px var(--shaddow);
   }
   #services .child_service i {
     color: var(--primary_color);
@@ -105,24 +115,26 @@
     margin: 30px 0;
   }
 
+/* ====== Portfolio Area ====== */
   #portfolio {
     padding: 30px 0;
-  }
-  #portfolio .portfolio_header h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
   }
   #portfolio .portfolio_header p {
     font-size: 14px;
     margin-bottom: 30px;
   }
   #portfolio .child_portfolio {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  #portfolio .child_portfolio:hover {
+    border: none;
+    box-shadow: 0 10px 10px var(--shaddow);
   }
   #portfolio .child_portfolio p {
     font-size: 12px;
   }
 
+/* ====== Testimonial Area ====== */
   #testimonial .testimonial {
     padding: 10px 0;
   }
@@ -145,6 +157,7 @@
     font-size: 12px;
   }
 
+/* ====== Contact Area ====== */
   #contact {
     margin: 30px 0;
   }
@@ -188,20 +201,98 @@
     font-size: 18px;
     border-radius: 15px 0 15px 0;
   }
+  
+/* ====== Footer Area ====== */
   #footer p {
     font-size: 10px;
   }
 
 }
 
-@media (min-width: 576px) {
-  
-}
+@media (min-width: 576px) and (max-width: 765.98px) {
+/* ====== Header Area ====== */
+  #header .logo img {
+    height: 40px;
+  }
+  #header .menu_items li {
+    font-size: 16px;
+  }
+/* ====== Banner Area ====== */
+  #banner {
+    padding: 110px 0 30px 0;
+  }
+  #banner .row {
+    flex-wrap: wrap-reverse;
+  }
+  #banner .banner_right .icon {
+    bottom: 25px;
+  }
+  #banner .banner_left {
+    margin-top: 30px;
+  }
+  #banner .banner_left_text h2 {
+    font-size: 40px;
+  }
 
-@media (min-width: 768px) {
-  
-}
+/* ====== About Area ====== */
+  #about {
+    padding: 30px 0;
+  }
+  #about .about_left {
+    margin-top: 0;
+  }
+  #about .about_right {
+    margin-top: 30px;
+  }
+  #about .work {
+    margin-bottom: 30px;
+  }
 
-@media (min-width: 992px) {
-  
+/* ====== Services Area ====== */
+  #services .child_service {
+    margin-bottom: 20px;
+  }
+
+/* ====== Portfolio Area ====== */
+  #portfolio {
+    padding: 20px 0;
+  }
+  #portfolio .portfolio_header p {
+    margin-bottom: 30px;
+  }
+
+/* ====== Testimonial Area ====== */
+  #testimonial .testimonial {
+    padding: 30px 0;
+  }
+  #testimonial .child_testimonial {
+    padding: 25px 20px;
+    border-radius: 40px 0 40px 0;
+    margin: 10px 0;
+  }
+  #testimonial .child_testimonial p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  #testimonial .child_testimonial .person {
+    margin: auto 120px;
+  }
+  #testimonial .child_testimonial .person img {
+    height: 50px;
+  }
+  #testimonial .child_testimonial .person h4 {
+    font-size: 20px;
+  }
+  #testimonial .child_testimonial .person h5 {
+    font-size: 12px;
+  }
+
+/* ====== Contact Area ====== */
+  #contact .contact_header p {
+    margin-bottom: 30px;
+  }
+  #contact .left{
+    margin-bottom: 20px;
+  }
 }
