@@ -49,7 +49,7 @@ img {
   background-color: var(--primary_color);
   height: 2px;
   width: 110px;
-  left: 215px;
+  left: 20px;
   bottom: 1px;
 }
 .heading::after {
@@ -58,7 +58,7 @@ img {
   background-color: var(--primary_color);
   height: 2px;
   width: 60px;
-  left: 238px;
+  left: 45px;
   bottom: -3px;
 }
 
@@ -173,35 +173,16 @@ color: var(--white_color);
 background-color: var(--primary_color);
 border: 1px solid var(--primary_color);
 }
-#banner .banner_right span {
+
+#banner .banner_right img {
   position: relative;
   width: 100%;
-}
-#banner .banner_right span::after {
-  position: absolute;
-  content: '';
-  top: 145px;
-  right: -15px;
-  background: var(--primary_color);
-  height: 200px;
-  width: 200px;
-  z-index: -1;
-}
-#banner .banner_right span::before {
-  position: absolute;
-  content: '';
-  bottom: 145px;
-  left: -15px;
-  background: var(--primary_color);
-  height: 200px;
-  width: 200px;
-  z-index: -1;
 }
 #banner .banner_right .icon {
   position: absolute;
   z-index: 1;
   bottom: 30px;
-  right: 40px;
+  right: 50px;
 }
 #banner .banner_right .icon i {
   color: var(--white_color);
@@ -301,6 +282,7 @@ span.top {
   color: var(--primary_color);
   font-size: 35px;
   margin-bottom: 15px;
+  display: inline-block;
 }
 #services .service_header p {
   color: var(--text_color);
@@ -347,6 +329,7 @@ span.top {
   font-size: 35px;
   text-align: center;
   margin-bottom: 20px;
+  display: inline-block;
 }
 #portfolio .portfolio_header p {
   color: var(--text_color);
@@ -356,7 +339,7 @@ span.top {
   text-align: center;
 }
 #portfolio .child_portfolio {
-  height: 370px;
+  height: auto;
   width: 100%;
   padding: 10px 10px;
   margin-bottom: 30px;
@@ -367,7 +350,7 @@ span.top {
   box-shadow: 0 10px 20px var(--shaddow);
 }
 #portfolio .child_portfolio img {
-  height: 235px;
+  height: auto;
   width: 100%;
 }
 #portfolio .child_portfolio p {
@@ -447,6 +430,7 @@ span.top {
   font-size: 35px;
   text-align: center;
   margin-bottom: 20px;
+  display: inline-block;
 }
 #contact .contact_header p {
   color: var(--text_color);
